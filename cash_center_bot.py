@@ -55,7 +55,7 @@ def create_payment(amount, buyer_email):
 # 🎉 Commande /start
 @bot.message_handler(commands=['start'])
 def start(message):
-    bot.send_message(message.chat.id, "Bienvenue sur CASH_CENTER !\nUtilisez /buy <montant en EUR> pour effectuer un paiement (minimum 0,25€).")
+    bot.send_message(message.chat.id, "Bienvenue sur CASH_CENTER !\nUtilisez /buy [montant en EUR] pour effectuer un paiement (minimum 0,25€).")
 
 # 🛒 Commande /buy
 @bot.message_handler(commands=['buy'])
